@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagi_san096 ホームページ</title>
+    <style>
+
+        :root {
+            --main-color: #4e342e;
+            --sub-color: #795548;
+            --bg: #ffffff;
+            --line-light: #eeeeee;
+            --line-dark: #333333;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+            background-color: var(--bg);
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid var(--main-color);
+            padding-bottom: 10px;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--main-color);
+            letter-spacing: 0.1em;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--line-light);
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-list li a {
+            display: inline-block;
+            padding: 10px 0;
+            text-decoration: none;
+            color: var(--sub-color);
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .nav-list li a:hover {
+            color: var(--main-color);
+            border-bottom: 2px solid var(--main-color);
+        }
+
+        section {
+            margin-bottom: 40px;
+            border: var(--line-light) solid 1px;
+            padding: 10px;
+            padding-top: 0;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+            color: var(--sub-color);
+            margin-bottom: 15px;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+        }
+
+        .hobby-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .hobby-table th, .hobby-table td {
+            border: 1px solid var(--line-dark);
+            padding: 12px;
+            text-align: left;
+        }
+
+        .hobby-table th {
+            background-color: #fcfcfc;
+            width: 30%;
+            color: var(--sub-color);
+            font-weight: bold;
+        }
+
+        .intro-text {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 1px solid var(--line-dark);
+            color: var(--line-dark);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--line-dark);
+            color: white;
+        }
+
+        .post-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .post-item {
+            border: 1px solid var(--line-light);
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: 0.2s;
+            display: block;
+        }
+
+        .post-item:hover {
+            border: 1px solid var(--line-dark);
+            background-color: #fcfcfc;
+        }
+
+        .post-date {
+            font-size: 0.75rem;
+            color: var(--sub-color);
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .post-title {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: var(--main-color);
+            font-weight: bold;
+        }
+
+        .post-excerpt {
+            font-size: 0.85rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: var(--sub-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.7rem;
+            color: #bbb;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Nagisan's Homepage</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./photo.html">PHOTO</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>ABOUT</h2>
+            <p class="intro-text">
+                趣味で写真を撮ったり、Webサイトを作ったりしています。<br>
+                基本的に「Nagi_san096」という名前で活動中です。
+            </p>
+        </section>
+
+        <section>
+            <h2>HOBBIES</h2>
+            <table class="hobby-table">
+                <tr>
+                    <th>Photography</th>
+                    <td>日常の風景や路地裏。光と影を意識して撮っています。</td>
+                </tr>
+                <tr>
+                    <th>Coding</th>
+                    <td>HTML/CSSの勉強中。このサイト、Msite1のテンプレートも自作です。</td>
+                </tr>
+                <tr>
+                    <th>Travel</th>
+                    <td>関東の各地へ旅行してます。鉄道・旅行オタクです。</td>
+                </tr>
+                <tr>
+                    <th>Game</th>
+                    <td>Minecraft暦7年(PC暦は約半年)。Roblox等もやっています。</td>
+                </tr>
+                <tr>
+                    <th>Music</th>
+                    <td>ボカロと洋楽をよく聴きます。</td>
+                </tr>
+                <tr>
+                    <th>Gadget</th>
+                    <td>カメラ機材やPCが好きです。</td>
+                </tr>
+                <tr>
+                    <th>Other</th>
+                    <td>架空鉄道「羽前急行」の作者。HPへは<a href="https://uzen-exp.jp">こちら</a>から</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>MESSAGE</h2>
+            <p class="intro-text">
+                ゲームや旅の話ができると嬉しいです。
+            </p>
+        </section>
+
+        <!--ここの下にさらに内容を追加-->
+
+        <a href="./blog.html" class="btn" style="margin-bottom: 10px;">VIEW MY BLOG ➔</a>
+        <a href="./photo.html" class="btn">VIEW MY PHOTO ➔</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nagi_san096</p>
+        <p>Template by Msite1</p>
+        <p>最終更新：2026.03.19</p>
+    </footer>
+</div>
+
+</body>
+</html>

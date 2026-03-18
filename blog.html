@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nagi_san096</title>
+    <style>
+
+        :root {
+            --main-color: #4e342e;
+            --sub-color: #795548;
+            --bg: #ffffff;
+            --line-light: #eeeeee;
+            --line-dark: #333333;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+            background-color: var(--bg);
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid var(--main-color);
+            padding-bottom: 10px;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--main-color);
+            letter-spacing: 0.1em;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--line-light);
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-list li a {
+            display: inline-block;
+            padding: 10px 0;
+            text-decoration: none;
+            color: var(--sub-color);
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .nav-list li a:hover {
+            color: var(--main-color);
+            border-bottom: 2px solid var(--main-color);
+        }
+
+        section {
+            margin-bottom: 40px;
+            border: var(--line-light) solid 1px;
+            padding: 10px;
+            padding-top: 0;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+            color: var(--sub-color);
+            margin-bottom: 15px;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+        }
+
+        .hobby-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .hobby-table th, .hobby-table td {
+            border: 1px solid var(--line-dark);
+            padding: 12px;
+            text-align: left;
+        }
+
+        .hobby-table th {
+            background-color: #fcfcfc;
+            width: 30%;
+            color: var(--sub-color);
+            font-weight: bold;
+        }
+
+        .intro-text {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 1px solid var(--line-dark);
+            color: var(--line-dark);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--line-dark);
+            color: white;
+        }
+
+        .post-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .post-item {
+            border: 1px solid var(--line-light);
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: 0.2s;
+            display: block;
+        }
+
+        .post-item:hover {
+            border: 1px solid var(--line-dark);
+            background-color: #fcfcfc;
+        }
+
+        .post-date {
+            font-size: 0.75rem;
+            color: var(--sub-color);
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .post-title {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: var(--main-color);
+            font-weight: bold;
+        }
+
+        .post-excerpt {
+            font-size: 0.85rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: var(--sub-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.7rem;
+            color: #bbb;
+            text-align: left;
+        }
+
+        .small {
+            font-size: 0.76rem;
+            color: #8e8e8e;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Nagisan's Blog</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./photo.html">PHOTO</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="post-list">
+            <div class="post-item">
+                <span class="post-date">2026.03.19</span>
+                <h2 class="post-title">ホームページを作成しました。</h2>
+                <p class="post-excerpt">ホームページを作成し、Msite1テンプレートを公開しました。やはりモダンなホームページを作るのは大変ですね…。CSSの一部はAIを使用しました(許して)。</p>
+            </div>
+
+            <p class="small">ここからはアーカイブです。</p>
+            
+            <div class="post-item">
+                <span class="post-date">2026.03.14</span>
+                <h2 class="post-title">房総半島大回り乗車。</h2>
+                <p class="post-excerpt">コスパが最高な大回り乗車。今回は房総半島編です。内房線・外房線・東金線・総武本線で房総半島を一周してきました。途中でまさかの「209系500番台 ケヨ34編成」に遭遇しました(1編成しかいないレアな車両)。</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2026.02.23</span>
+                <h2 class="post-title">河口湖と小淵沢へ旅行。</h2>
+                <p class="post-excerpt">今年2回目の中央本線でまずは大月へ。富士急行線へ乗り継いで、河口湖まで行きました。第一印象は「人が多い！！」。インバウンド観光客の影響で外国の方がかなりいました。もちろん富士山もきれいに見えましたよ。午後は小淵沢へ。こっちは河口湖と違いかなり空いていました(田舎だから)。小淵沢では富士山と八ヶ岳が綺麗に見えました。(まさか小淵沢の方が富士山綺麗に見えるとは)</p>
+            </div>
+            
+            <div class="post-item">
+                <span class="post-date">2026.02.23</span>
+                <h2 class="post-title">初の大回り乗車。</h2>
+                <p class="post-excerpt">金欠だったので初の大回り乗車をしました。まず八高線で高崎、両毛線で小山、上野東京ラインで横浜方面へ。両毛線でまさかの3度目の211系。運命とはこのことだ(自分で旅程組んだから必然とも言える)。ついでに南部支線と鶴見線にも乗りました。</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2026.02.08</span>
+                <h2 class="post-title">長瀞へ行きました。</h2>
+                <p class="post-excerpt">初の八高北線で寄居へ、そこから秩父鉄道で上長瀞の「秩父鉄道荒川橋梁」へ写真を撮りに行きました。そこでの風景にびっくり。雪景色と鉄橋、川の清流が合わさって最高の時間でした。あと意外と秩父鉄道、本数多いんですね。</p>
+            </div>
+
+
+            <div class="post-item">
+                <span class="post-date">2026.02.01</span>
+                <h2 class="post-title">水戸に行きました。</h2>
+                <p class="post-excerpt">常磐線を乗り継いで水戸へ。偕楽園だ！と思った方もいるかもしれませんが、残念ながら時間不足でいけませんでした…マジでもったいない。帰りはグリーン車で快適な座席を堪能しました。</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2026.01.18</span>
+                <h2 class="post-title">碓氷峠に行きました。</h2>
+                <p class="post-excerpt">この時点での一番の遠出です。高崎からまたもや211系に乗車。甲府に行ったときは「これが最初で最後」と思っていましたが再び。かつての大動脈信越本線に乗り継いで横川へ。横川には碓氷峠鉄道文化むらがあります。私たちは碓氷峠の入り口部分(？)のみ歩きましたが、それでも翌日は筋肉痛がひどかったです。</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2026.01.04</span>
+                <h2 class="post-title">甲府に行きました。</h2>
+                <p class="post-excerpt">西方面への旅行は初めて。高尾からは国鉄時代からの211系に乗車、ボックスシートでしたが車内はほぼ貸し切り状態で空いていました。甲府では甲府城跡に行き、富士山や甲府盆地の写真を撮影しました。(中央線特急は人気で乗れませんでした…)</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2025.12.21</span>
+                <h2 class="post-title">ゆりかもめに乗りに行きました。</h2>
+                <p class="post-excerpt">ゆりかもめは東京の海岸沿いを走る新交通システム。途中でレインボーブリッジを渡ったことが一番意外でした。ほかにも東京ビッグサイトや海が見られて楽しかったです。</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2025.11.07</span>
+                <h2 class="post-title">多摩湖と航空記念公園へ行きました。</h2>
+                <p class="post-excerpt">多摩湖までは西武線が最短。湖畔からは富士山も見え癒されました。帰り際に所沢航空記念公園へ寄り道。あいにく休館日でしたが外展示のYS-11などが見られてよかったです。</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2025.10.05</span>
+                <h2 class="post-title">上総湊へ行きました。</h2>
+                <p class="post-excerpt">房総方面への初めての遠出です。途中では小湊鉄道の古い気動車などがあってびっくり。上総湊では湊川橋梁を走る列車を撮影しました。</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2025.09.28</span>
+                <h2 class="post-title">富士市方面へ行きました。</h2>
+                <p class="post-excerpt">JR東海に乗りたいという理由だけで行きました。関東では滅多に乗れないクロスシート車両が沢山いてびっくりしました。</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2025.09.14</span>
+                <h2 class="post-title">六郷で鉄道写真を撮りました。</h2>
+                <p class="post-excerpt">多摩川に架かる六郷橋と、ここを通る列車の風景を撮影しました。かなり暑くて大変でしたがいい写真が撮れました。</p>
+            </div>
+
+            <div class="post-item">
+                <span class="post-date">2025.07.06</span>
+                <h2 class="post-title">根府川に行きました。</h2>
+                <p class="post-excerpt">根府川駅はJR東日本管内東海道本線唯一の無人駅です。跨線橋を渡って駅舎に行くと、綺麗に相模湾の海が見えました。ここの「跨線橋・海・列車」の合わさった風景は最高です。ちなみに根府川といったら白糸川橋梁ですが、時間不足で行けませんでした…。</p>
+            </div>
+        </div>
+
+        <a href="./index.html" class="back-link">← TOPに戻る</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nagi_san096</p>
+        <p>Template by Msite1</p>
+        <p>最終更新：2026.03.19</p>
+    </footer>
+</div>
+
+</body>
+</html>
