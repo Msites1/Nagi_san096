@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagi_san096 ホームページ</title>
+    <title>Blog | Nagi_san096</title>
     <style>
 
         :root {
@@ -187,82 +187,105 @@
             text-align: left;
         }
 
+        .small {
+            font-size: 0.76rem;
+            color: #8e8e8e;
+            text-align: left;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .photo-item {
+            border: 1px solid var(--line-light);
+            padding: 8px;
+            background: #ffffff;
+            transition: 0.2s;
+        }
+
+        .photo-item:hover {
+            border-color: var(--line-dark); 
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 3 / 2;
+        }
+
+        .photo-caption {
+            font-size: 0.7rem;
+            color: var(--sub-color);
+            margin-top: 10px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>Nagisan's Homepage</h1>
+        <h1>Nagisan's Blog</h1>
     </header>
 
     <nav>
         <ul class="nav-list">
+            <li><a href="./index.html">HOME</a></li>
             <li><a href="./blog.html">BLOG</a></li>
-            <li><a href="./photo.html">PHOTO</a></li>
         </ul>
     </nav>
 
     <main>
         <section>
-            <h2>ABOUT</h2>
-            <p class="intro-text">
-                趣味で写真を撮ったり、Webサイトを作ったりしています。<br>
-                基本的に「Nagi_san096」という名前で活動中です。
-            </p>
+            <h2>GALLERY</h2>
+            <div class="photo-grid">
+
+                <div class="photo-item">
+                    <img src="img/IMG_1538.JPG" alt="作品4">
+                    <div class="photo-caption">2026.02.08 / 秩父鉄道荒川橋梁</div>
+                </div>
+
+                <div class="photo-item">
+                    <img src="img/IMG_1329.JPG" alt="作品4">
+                    <div class="photo-caption">2026.01.04 / 甲府盆地と富士山</div>
+                </div>
+
+                <div class="photo-item">
+                    <img src="img/IMG_1118.JPG" alt="作品4">
+                    <div class="photo-caption">2025.11.07 / 多摩湖の取水塔</div>
+                </div>
+
+                <div class="photo-item">
+                    <img src="img/IMG_0474.JPG" alt="作品4">
+                    <div class="photo-caption">2025.10.05 / 湊川橋梁の夕焼け</div>
+                </div>
+
+                <div class="photo-item">
+                    <img src="img/IMG_9820.JPG">
+                    <div class="photo-caption">2025.09.14 / 六郷橋と京急線</div>
+                </div>
+                
+                <div class="photo-item">
+                    <img src="img/IMG_9000.JPG">
+                    <div class="photo-caption">2025.07.06 / 根府川駅とE231系</div>
+                </div>
+
+            </div>
         </section>
 
-        <section>
-            <h2>HOBBIES</h2>
-            <table class="hobby-table">
-                <tr>
-                    <th>Photography</th>
-                    <td>日常の風景や路地裏。光と影を意識して撮っています。</td>
-                </tr>
-                <tr>
-                    <th>Coding</th>
-                    <td>HTML/CSSの勉強中。このサイト、Msite1のテンプレートも自作です。</td>
-                </tr>
-                <tr>
-                    <th>Travel</th>
-                    <td>関東の各地へ旅行してます。鉄道・旅行オタクです。</td>
-                </tr>
-                <tr>
-                    <th>Game</th>
-                    <td>Minecraft暦7年(PC暦は約半年)。Roblox等もやっています。</td>
-                </tr>
-                <tr>
-                    <th>Music</th>
-                    <td>ボカロと洋楽をよく聴きます。</td>
-                </tr>
-                <tr>
-                    <th>Gadget</th>
-                    <td>カメラ機材やPCが好きです。</td>
-                </tr>
-                <tr>
-                    <th>Other</th>
-                    <td>架空鉄道「羽前急行」の作者。HPへは<a href="https://uzen-exp.jp">こちら</a>から</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
-            <h2>MESSAGE</h2>
-            <p class="intro-text">
-                ゲームや旅の話ができると嬉しいです。
-            </p>
-        </section>
-
-        <!--ここの下にさらに内容を追加-->
-
-        <a href="./blog.html" class="btn" style="margin-bottom: 10px;">VIEW MY BLOG ➔</a>
-        <a href="./photo.html" class="btn">VIEW MY PHOTO ➔</a>
+        <a href="./index.html" class="back-link">← TOPに戻る</a>
     </main>
 
     <footer>
         <p>&copy; 2026 Nagi_san096</p>
         <p>Template by Msite1</p>
-        <p>最終更新：2026.03.19</p>
         <p>最終更新：2026.03.19</p>
     </footer>
 </div>
